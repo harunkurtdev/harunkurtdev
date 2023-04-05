@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 # 💫 About Me:
-I'm still a student at Yıldız Technical University<br>i am interested in ardupilot and px4 work
+<!-- I'm still a student at Yıldız Technical University<br>i am interested in ardupilot and px4 work -->
 
 [![](https://visitcount.itsvg.in/api?id=harunkurtme&icon=0&color=0)](https://visitcount.itsvg.in)
 ## 🌐 Socials:
