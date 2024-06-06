@@ -23,8 +23,8 @@ jobs:
     # Checks-out repository under $GITHUB_WORKSPACE, so the job can access it
     - uses: actions/checkout@v2
       with:
-        path: master
-        repository: harunkurtdev/master
+        path: stats
+        repository: harunkurtdev/stats
         token: ${{ secrets.ACCESS_TOKEN }}
     
     # Push generated stats to GMahmoud
