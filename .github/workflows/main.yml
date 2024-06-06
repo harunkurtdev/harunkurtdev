@@ -21,11 +21,11 @@ jobs:
     - uses: actions/checkout@v2
 
     # Checks-out repository under $GITHUB_WORKSPACE, so the job can access it
-    - uses: actions/checkout@v2
-      with:
-        path: stats
-        repository: harunkurtdev/stats
-        token: ${{ secrets.ACCESS_TOKEN }}
+    # - uses: actions/checkout@v2
+    #   with:
+    #     path: stats
+    #     repository: harunkurtdev/stats
+    #     token: ${{ secrets.ACCESS_TOKEN }}
     
     # Push generated stats to GMahmoud
     - name: Get generated stats to profile repo
