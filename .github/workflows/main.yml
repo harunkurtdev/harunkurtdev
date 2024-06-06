@@ -23,14 +23,14 @@ jobs:
     # Checks-out repository under $GITHUB_WORKSPACE, so the job can access it
     - uses: actions/checkout@v2
       with:
-        path: stats
-        repository: harunkurtdev/stats
+        path: master
+        repository: harunkurtdev/master
         token: ${{ secrets.ACCESS_TOKEN }}
     
     # Push generated stats to GMahmoud
     - name: Get generated stats to profile repo
       run: |
-        git config --global user.name "harunkurtdev/harunkurtdev"
+        git config --global user.name "harunkurtdev"
         git config --global user.email "harunkurt.dev@gmail.com"  
         rm -rf generated
         cp -r stats/generated .
