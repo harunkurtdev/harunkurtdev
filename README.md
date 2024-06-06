@@ -9,8 +9,6 @@ Robotics **|** DevOPS  **|** Flutter  **|** React  **|** Docker **|** Reinforcem
 ![](generated/overview.svg)
 ![](generated/languages.svg)
  
-
-
 <!--
 ### Hi there 👋
 **harunkurtme/harunkurtme** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
