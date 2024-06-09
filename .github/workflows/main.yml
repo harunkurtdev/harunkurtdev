@@ -12,11 +12,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Checkout the main repository
     - name: Checkout Main Repository
       uses: actions/checkout@v2
 
-    # Checkout the stats repository
+    - name: Debugging Info
+      run: |
+        echo "Checking environment variables"
+        echo "ACCESS_TOKEN is set: ${ACCESS_TOKEN}"
+        echo "Checking repository info"
+        echo "Repository: harunkurtdev/stats"
+
     - name: Checkout Stats Repository
       uses: actions/checkout@v2
       with:
@@ -24,7 +29,6 @@ jobs:
         repository: harunkurtdev/stats
         token: ${{ secrets.ACCESS_TOKEN }}
 
-    # Update the stats and commit the changes
     - name: Update and Commit Stats
       run: |
         git config --global user.name "harunkurtdev"
