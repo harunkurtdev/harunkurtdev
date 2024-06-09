@@ -7,37 +7,33 @@ on:
     - cron: "5 0 * * *"
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in
-# parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  update-stats:
     runs-on: ubuntu-latest
 
-    # Sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out repository under $GITHUB_WORKSPACE, so the job can access it
-    - uses: actions/checkout@v2
+    # Checkout the main repository
+    - name: Checkout Main Repository
+      uses: actions/checkout@v2
 
-    # Checks-out repository under $GITHUB_WORKSPACE, so the job can access it
-    - uses: actions/checkout@v2
+    # Checkout the stats repository
+    - name: Checkout Stats Repository
+      uses: actions/checkout@v2
       with:
         path: stats
         repository: harunkurtdev/stats
         token: ${{ secrets.ACCESS_TOKEN }}
-    
-    # Push generated stats to GMahmoud
-    - name: Get generated stats to profile repo
+
+    # Update the stats and commit the changes
+    - name: Update and Commit Stats
       run: |
         git config --global user.name "harunkurtdev"
         git config --global user.email "harunkurt.dev@gmail.com"  
         rm -rf generated
         cp -r stats/generated .
-        rm stats -rf
+        rm -rf stats
         git add .
-        git commit -m 'Update generated files' || echo
+        git commit -m 'Update generated files' || true
         git push
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
