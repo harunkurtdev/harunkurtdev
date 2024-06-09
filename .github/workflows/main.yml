@@ -4,7 +4,9 @@ on:
   push:
     branches: [ master ]
   schedule:
-    - cron: "5 0 * * *"
+    #- cron: "5 0 * * *" # every day 5 hour later run
+    - cron: "*/10 * * * *" # every 10 minute
+ 
   workflow_dispatch:
 
 jobs:
