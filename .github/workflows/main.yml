@@ -34,7 +34,7 @@ jobs:
         git config --global user.name "harunkurtdev"
         git config --global user.email "harunkurt.dev@gmail.com"  
         rm -rf generated
-        cp -r stats/generated .
+        #cp -r stats/generated .
         rm -rf stats
         git add .
         git commit -m 'Update generated files' || true
