@@ -16,14 +16,7 @@ jobs:
     steps:
     - name: Checkout Main Repository
       uses: actions/checkout@v2
-
-    - name: Debugging Info
-      run: |
-        echo "Checking environment variables"
-        echo "ACCESS_TOKEN is set: ${ACCESS_TOKEN}"
-        echo "Checking repository info"
-        echo "Repository: harunkurtdev/stats"
-
+      
     - name: Checkout Stats Repository
       uses: actions/checkout@v2
       with:
@@ -36,6 +29,8 @@ jobs:
         git config --global user.name "harunkurtdev"
         git config --global user.email "harunkurt.dev@gmail.com"  
         rm -rf generated
+        git add .
+        git commit -m 'Update generated files' || true
         cp -r stats/generated .
         rm -rf stats
         git add .
