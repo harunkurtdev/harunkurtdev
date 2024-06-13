@@ -7,6 +7,7 @@
 
 Robotics **|** DevOPS  **|** Flutter  **|** React  **|** Docker **|** Reinforcement learning **|** Mechatronic
 
+![](https://camo.githubusercontent.com/46701b14bddd750f228fba0bd404799b4a4abf798d4583f861829ad644b616ac/68747470733a2f2f692e696d6775722e636f6d2f7149314a66796c2e676966)
 
 <!--
 ### Hi there 👋
