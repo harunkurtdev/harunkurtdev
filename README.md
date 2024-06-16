@@ -9,6 +9,12 @@ Robotics **|** DevOPS  **|** Flutter  **|** React  **|** Docker **|** Reinforcem
 
 ![](https://camo.githubusercontent.com/46701b14bddd750f228fba0bd404799b4a4abf798d4583f861829ad644b616ac/68747470733a2f2f692e696d6775722e636f6d2f7149314a66796c2e676966)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/harunkurtdev/harunkurtdev/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/harunkurtdev/harunkurtdev/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/harunkurtdev/harunkurtdev/output/github-contribution-grid-snake.svg">
+</picture>
+
 <!--
 ### Hi there 👋
 **harunkurtme/harunkurtme** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
